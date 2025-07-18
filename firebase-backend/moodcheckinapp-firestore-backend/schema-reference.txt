@@ -1,0 +1,15 @@
+--- Firestore Database Schema ---
+
+Collection: moods
+------------------
+- id         : String (document ID, auto-generated or manual)
+- user_id    : String (Firebase Auth UID)
+- mood       : String (e.g., 😊, 😐, 😢)
+- note       : String (optional)
+- team_id    : String (optional, future use)
+- timestamp  : Timestamp (auto-generated or set manually)
+
+Collection: teams
+------------------
+- team_id    : String
+- team_name  : String
