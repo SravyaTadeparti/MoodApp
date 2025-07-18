@@ -98,25 +98,26 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="insights-grid mt-10">
-          <div className="bg-blue-50 p-6 rounded-xl">
-            <h3 className="font-bold text-yellow-600 mb-2">What This Says About You</h3>
-            <ul className="list-disc list-inside text-sm text-gray-700">
-              <li>Your sleep quality: {responses.sleep}/5</li>
-              <li>Stress level: {responses.stress}/5</li>
-              <li>Energy level: {responses.energy}/5</li>
-            </ul>
-          </div>
+<div className="insights-grid">
+  <div className="insight-card">
+    <h3>🌟 What This Says About You</h3>
+    <ul>
+      <li>Good sleep quality detected – you're resting well!</li>
+      <li>Low stress levels – you're managing stress effectively.</li>
+      <li>Consistent energy levels – a healthy routine is visible.</li>
+    </ul>
+  </div>
 
-          <div className="bg-green-50 p-6 rounded-xl">
-            <h3 className="font-bold text-green-700 mb-2">Personalized Suggestions</h3>
-            <ul className="list-disc list-inside text-sm text-gray-700">
-              <li>Maintain your sleep schedule.</li>
-              <li>Keep managing stress as needed.</li>
-              <li>Consider moderate physical activity to stay energized.</li>
-            </ul>
-          </div>
-        </div>
+  <div className="insight-card suggestions-card">
+    <h3>💡 Personalized Suggestions</h3>
+    <ul>
+      <li>Maintain your current sleep schedule for steady energy.</li>
+      <li>Practice mindfulness or relaxation exercises daily.</li>
+      <li>Consider light physical activity to boost mood further.</li>
+    </ul>
+  </div>
+</div>
+
       </div>
     </div>
   );
