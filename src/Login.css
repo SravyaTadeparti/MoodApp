@@ -1,0 +1,67 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-container h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.signup-button {
+  background-color: #10b981;
+  color: white;
+}
+
+.google-button {
+  background-color: #ef4444;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+}

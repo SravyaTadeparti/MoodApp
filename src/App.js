@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-gray-100 flex items-center justify-center">
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/questionnaire" element={<QuestionnairePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/landingpage" element={<LandingPage />} />
