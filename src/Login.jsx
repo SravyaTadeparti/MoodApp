@@ -13,7 +13,7 @@ const Login = () => {
     setError("");
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/dashboard");  // 👈 Navigate after success
+      navigate("/questionnaire");  // 👈 Navigate after success
     } catch (err) {
       setError(err.message);
     }
@@ -23,7 +23,7 @@ const Login = () => {
     setError("");
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate("/dashboard");  // 👈 Navigate after success
+      navigate("/questionnaire");  // 👈 Navigate after success
     } catch (err) {
       setError(err.message);
     }
@@ -33,7 +33,7 @@ const Login = () => {
     setError("");
     try {
       await signInWithPopup(auth, googleProvider);
-      navigate("/dashboard");  // 👈 Navigate after success
+      navigate("/questionnaire");  // 👈 Navigate after success
     } catch (err) {
       setError(err.message);
     }
